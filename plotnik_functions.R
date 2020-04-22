@@ -2,7 +2,7 @@
 
 # Functions to make processing data from FAVE easier.  Then can run a mutate in dplyr 
 
-plt_manner <- function(x){
+plt_manner.fn <- function(x){
   manner.codes = c(
     `1` = "stop",
     `2` = "affricate",
@@ -15,7 +15,7 @@ plt_manner <- function(x){
   return(manner)
 }
 
-plt_place <- function(x){
+plt_place.fn <- function(x){
   place.codes = c(
     `1` = "labial",
     `2` = "labiodental",
@@ -28,7 +28,7 @@ plt_place <- function(x){
   return(place)
 }
 
-plt_preseg <- function(x){
+plt_preseg.fn <- function(x){
   preseg.codes = c(
     `1` = "oral_labial",
     `2` = "nasal_labial",
@@ -44,7 +44,7 @@ plt_preseg <- function(x){
   return(preseg)
 }
 
-plt_voice <- function(x){
+plt_voice.fn <- function(x){
   voice.codes = c(
     `1` = "voiceless",
     `2` = "voiced"
@@ -54,7 +54,7 @@ plt_voice <- function(x){
   return(voice)
 }
 
-plt_folseq <- function(x){
+plt_folseq.fn <- function(x){
   folseq.codes = c(
     `1` = "one_fol_syll",
     `2` = "two_fol_syl",
@@ -67,7 +67,7 @@ plt_folseq <- function(x){
   return(folseq)
 }
 
-plt_vowels <- function(x){
+plt_vowels.fn <- function(x){
   vclass.codes = c(
     `1` = "i",
     `2` = "e",
