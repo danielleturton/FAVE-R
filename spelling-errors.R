@@ -2,7 +2,6 @@
 # important if including word as random effect, or looking at frequency or whatever
 library(tidyverse)
 
-
 data_clean = data %>%
   mutate(WORD = recode(WORD,
         "AUNTY" = "AUNTIE", "NANNA" = "NANA",
